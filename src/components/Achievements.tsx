@@ -6,45 +6,45 @@ const Achievements = () => {
   const achievements = [
     {
       icon: Trophy,
-      title: "Dean's List Recognition",
-      description: "Consistently maintained high academic performance with GPA above 3.8",
-      year: "2023",
-      category: "Academic Excellence",
+      title: "2nd Place - HackTheBlock",
+      description: "Achieved 2nd place among 1,000+ participants and won $300 for a high-impact blockchain project",
+      year: "2025",
+      category: "Hackathon",
     },
     {
       icon: Award,
-      title: "Research Excellence Award",
-      description: "Recognized for outstanding contribution to interdisciplinary research project",
-      year: "2023",
-      category: "Research",
+      title: "2nd Rank - AI in Web Development",
+      description: "Secured 2nd rank by developing an AI-driven language learning platform using Python",
+      year: "2024",
+      category: "Competition",
     },
     {
       icon: Star,
-      title: "Best Paper Award",
-      description: "Received best paper award at International Conference on Academic Research",
-      year: "2022",
-      category: "Publication",
+      title: "Ayush Healthcare Platform",
+      description: "Architected a React and FastAPI platform with 35% latency reduction and 95% accuracy in medical term mapping",
+      year: "2025",
+      category: "Project",
     },
     {
       icon: Medal,
-      title: "Academic Scholarship",
-      description: "Merit-based scholarship for academic excellence and leadership potential",
-      year: "2022",
-      category: "Scholarship",
+      title: "ATS Resume Score",
+      description: "Engineered an AI-powered ATS analyzer that reduced resume screening time by 70% with 92% accuracy",
+      year: "2025",
+      category: "Project",
     },
     {
       icon: Trophy,
-      title: "Honor Society Membership",
-      description: "Inducted into prestigious academic honor society for outstanding achievements",
-      year: "2021",
-      category: "Honor",
+      title: "Code Query - Oracle APEX",
+      description: "Deployed a centralized portal reducing processing time by 60% for 500+ papers with automated workflows",
+      year: "2025",
+      category: "Training Project",
     },
     {
       icon: Award,
-      title: "Student Leadership Award",
-      description: "Recognized for exceptional leadership in academic and extracurricular activities",
-      year: "2021",
-      category: "Leadership",
+      title: "Pet Adoption Platform",
+      description: "Engineered a responsive web platform with 30% increased user engagement through dynamic galleries",
+      year: "2024",
+      category: "Project",
     },
   ];
 
@@ -52,9 +52,9 @@ const Achievements = () => {
     <section className="section-padding">
       <div className="container-prose">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Academic Achievements</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Projects & Achievements</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Recognition and milestones in my academic journey
+            Recognition and milestones in my development journey
           </p>
         </div>
 

@@ -1,12 +1,12 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { User, Target, Heart } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: User, label: "Years of Experience", value: "5+" },
-    { icon: Target, label: "Research Projects", value: "15+" },
-    { icon: Heart, label: "Publications", value: "8+" },
+    { icon: User, label: "Years of Study", value: "2.5+" },
+    { icon: Target, label: "Projects Completed", value: "4+" },
+    { icon: Heart, label: "Certifications", value: "5+" },
   ];
 
   return (
@@ -15,28 +15,30 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">About Me</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Driven by curiosity and excellence in academic pursuits
+            Driven by curiosity and excellence in software development
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">Academic Journey</h3>
+            <h3 className="text-2xl font-semibold">My Journey</h3>
             <p className="text-muted-foreground leading-relaxed">
-              My academic journey has been shaped by a deep passion for learning and research. 
-              I believe in the power of knowledge to transform both individual lives and society as a whole.
+              Currently pursuing B.Tech in Computer Science at Lovely Professional University, I'm passionate about
+              creating innovative solutions that bridge technology and real-world problems. My journey has been marked
+              by hands-on projects in healthcare technology, AI-powered applications, and full-stack web development.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Through rigorous study, collaborative research, and continuous learning, 
-              I strive to contribute meaningfully to my field while maintaining the highest standards of academic integrity.
+              With expertise in React, Next.js, Python, and modern development frameworks, I've built platforms that
+              have won hackathons and solved practical challenges. I believe in continuous learning and applying
+              cutting-edge technologies to create meaningful impact.
             </p>
-            
+
             <div className="flex flex-wrap gap-2">
-              <Badge variant="secondary">Research</Badge>
-              <Badge variant="secondary">Analysis</Badge>
-              <Badge variant="secondary">Writing</Badge>
-              <Badge variant="secondary">Collaboration</Badge>
-              <Badge variant="secondary">Critical Thinking</Badge>
+              <Badge variant="secondary">Full Stack Development</Badge>
+              <Badge variant="secondary">React & Next.js</Badge>
+              <Badge variant="secondary">Python & AI/ML</Badge>
+              <Badge variant="secondary">Problem Solving</Badge>
+              <Badge variant="secondary">Leadership</Badge>
             </div>
           </div>
 

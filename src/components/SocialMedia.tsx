@@ -1,13 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Github, 
-  Linkedin, 
-  Twitter, 
-  Mail, 
-  Globe, 
-  FileText,
-  BookOpen,
-  Youtube
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Globe,
+  Phone
 } from "lucide-react";
 
 const SocialMedia = () => {
@@ -15,58 +12,37 @@ const SocialMedia = () => {
     {
       icon: Linkedin,
       name: "LinkedIn",
-      handle: "@yourlinkedin",
-      url: "#",
+      handle: "@ajaygangwar945",
+      url: "https://linkedin.com/in/ajaygangwar945",
       description: "Professional network and career updates",
     },
     {
       icon: Github,
       name: "GitHub",
-      handle: "@yourgithub",
-      url: "#",
+      handle: "@ajaygangwar945",
+      url: "https://github.com/ajaygangwar945",
       description: "Code repositories and open source contributions",
     },
     {
-      icon: Twitter,
-      name: "Twitter",
-      handle: "@yourtwitter",
-      url: "#",
-      description: "Academic thoughts and research insights",
-    },
-    {
-      icon: BookOpen,
-      name: "ResearchGate",
-      handle: "@yourresearch",
-      url: "#",
-      description: "Research publications and academic network",
-    },
-    {
-      icon: FileText,
-      name: "ORCID",
-      handle: "0000-0000-0000-0000",
-      url: "#",
-      description: "Academic identity and publication record",
-    },
-    {
       icon: Globe,
-      name: "Personal Website",
-      handle: "yourwebsite.com",
-      url: "#",
-      description: "Blog and academic portfolio",
-    },
-    {
-      icon: Youtube,
-      name: "YouTube",
-      handle: "@yourchannel",
-      url: "#",
-      description: "Educational content and research presentations",
+      name: "Portfolio",
+      handle: "ajay-gangwar-portfolio.netlify.app",
+      url: "https://ajay-gangwar-portfolio.netlify.app",
+      description: "Personal portfolio and project showcase",
     },
     {
       icon: Mail,
       name: "Email",
-      handle: "your.email@university.edu",
-      url: "mailto:your.email@university.edu",
+      handle: "ajaygangwar945@gmail.com",
+      url: "mailto:ajaygangwar945@gmail.com",
       description: "Direct contact for collaborations",
+    },
+    {
+      icon: Phone,
+      name: "Mobile",
+      handle: "+91-8283024392",
+      url: "tel:+918283024392",
+      description: "Contact via phone",
     },
   ];
 
@@ -76,30 +52,38 @@ const SocialMedia = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Connect With Me</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Let's connect across various platforms for collaboration and networking
+            Let's connect for collaboration, opportunities, and networking
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="flex flex-wrap justify-center gap-6 mb-12 max-w-5xl mx-auto">
           {socialLinks.map((link, index) => (
-            <Card key={index} className="glass-card hover-lift group cursor-pointer">
-              <CardContent className="p-6 text-center">
-                <div className="flex justify-center mb-4">
-                  <div className="social-link group-hover:scale-110">
-                    <link.icon className="h-6 w-6" />
+            <a
+              key={index}
+              href={link.url}
+              target={link.url.startsWith('http') ? '_blank' : undefined}
+              rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+              className="block w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+            >
+              <Card className="glass-card hover-lift group cursor-pointer h-full">
+                <CardContent className="p-6 text-center">
+                  <div className="flex justify-center mb-4">
+                    <div className="social-link group-hover:scale-110">
+                      <link.icon className="h-6 w-6" />
+                    </div>
                   </div>
-                </div>
-                <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
-                  {link.name}
-                </h3>
-                <p className="text-sm text-muted-foreground mb-2">
-                  {link.handle}
-                </p>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  {link.description}
-                </p>
-              </CardContent>
-            </Card>
+                  <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
+                    {link.name}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    {link.handle}
+                  </p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    {link.description}
+                  </p>
+                </CardContent>
+              </Card>
+            </a>
           ))}
         </div>
 
@@ -108,30 +92,34 @@ const SocialMedia = () => {
             <CardContent className="p-8">
               <h3 className="text-xl font-semibold mb-4">Ready to Collaborate?</h3>
               <p className="text-muted-foreground mb-6 max-w-md">
-                I'm always open to discussing research opportunities, academic collaborations, 
-                or sharing knowledge in my field of expertise.
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                Feel free to reach out!
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <a
-                  href="mailto:your.email@university.edu"
+                  href="mailto:ajaygangwar945@gmail.com"
                   className="social-link"
                   aria-label="Send email"
                 >
                   <Mail className="h-6 w-6" />
                 </a>
                 <a
-                  href="#"
+                  href="https://linkedin.com/in/ajaygangwar945"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="social-link"
                   aria-label="LinkedIn profile"
                 >
                   <Linkedin className="h-6 w-6" />
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/ajaygangwar945"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="social-link"
-                  aria-label="Twitter profile"
+                  aria-label="GitHub profile"
                 >
-                  <Twitter className="h-6 w-6" />
+                  <Github className="h-6 w-6" />
                 </a>
               </div>
             </CardContent>

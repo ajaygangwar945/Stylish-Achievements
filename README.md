@@ -1,6 +1,7 @@
 <div align="center">
   
 # 💖 Lovable Web Application  
+
 ### ⚡ Build • Customize • Deploy — Faster with Lovable
 
 ![Status](https://img.shields.io/badge/Status-Active-success?style=flat)
@@ -15,7 +16,6 @@
 
 </div>
 
-
 ---
 
 ## 📌 Project Overview
@@ -24,6 +24,7 @@ This is a **Lovable-powered web application** built using a modern frontend stac
 It enables **rapid UI development**, **prompt-based editing**, and **instant deployment** — all while keeping full control through GitHub.
 
 Perfect for:
+
 - 🚀 Rapid prototyping  
 - 🎨 UI-first applications  
 - 🧠 AI-assisted development  
@@ -38,6 +39,7 @@ Perfect for:
 - 🟦 Type-safe code using **TypeScript**
 - 🎨 Beautiful UI via **shadcn/ui**
 - 🌈 Utility-first styling with **Tailwind CSS**
+- ✨ Immersive 3D Experiences with **React Three Fiber**
 - 🔄 Auto-sync between Lovable & GitHub
 - 🚀 One-click deployment from Lovable
 
@@ -52,6 +54,7 @@ Perfect for:
 | 🟦 TypeScript | Type safety |
 | 🎨 shadcn/ui | Reusable UI components |
 | 🌈 Tailwind CSS | Styling |
+| 🧊 local Three.js / R3F | 3D Graphics & Animations |
 | 💖 Lovable | AI-assisted development & hosting |
 
 ---
@@ -68,16 +71,15 @@ Perfect for:
 
 [![Live Project](https://img.shields.io/badge/🌐_Live_Project-Visit-success?style=flat)](https://lovable.dev/projects/587e70a3-7f47-4698-866d-c0543ca8a141)
 
-
 ---
 
 ### 💻 Option 2: Use Your Own IDE
 
 #### 📦 Prerequisites
+
 - Node.js  
 - npm  
 - (Recommended) nvm  
-
 
 #### 🚀 Setup Steps
 
@@ -129,7 +131,8 @@ Deploy your application instantly using **Lovable**:
 
 Yes, custom domains are supported.
 
-### Steps:
+### Steps
+
 1. Go to **Project → Settings → Domains**  
 2. Click **Connect Domain**  
 3. Follow the DNS instructions  
@@ -169,4 +172,3 @@ Contributions are welcome!
 ⭐ If you like this project, consider **starring the repository**!
 
 </div>
-

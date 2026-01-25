@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, BookOpen, Award } from "lucide-react";
 
@@ -6,43 +6,83 @@ const Qualifications = () => {
   const qualifications = [
     {
       icon: GraduationCap,
-      degree: "Master of Science",
-      field: "Computer Science",
-      institution: "University Name",
-      year: "2023",
-      status: "Completed",
-      grade: "Magna Cum Laude",
-      description: "Specialized in artificial intelligence and machine learning with thesis on deep learning applications.",
-    },
-    {
-      icon: GraduationCap,
-      degree: "Bachelor of Science",
-      field: "Information Technology",
-      institution: "University Name",
-      year: "2021",
-      status: "Completed",
-      grade: "Summa Cum Laude",
-      description: "Comprehensive study of software development, database systems, and network security.",
+      degree: "Bachelor of Technology",
+      field: "Computer Science and Engineering",
+      institution: "Lovely Professional University",
+      year: "2023 - Present",
+      status: "In Progress",
+      grade: "CGPA: 7.38",
+      description: "Comprehensive study of software development, data structures, algorithms, AI/ML, and modern web technologies.",
     },
     {
       icon: Award,
-      degree: "Professional Certificate",
-      field: "Data Analytics",
-      institution: "Professional Institute",
-      year: "2022",
+      degree: "Introduction to Modern AI",
+      field: "Artificial Intelligence",
+      institution: "Cisco",
+      year: "2025",
       status: "Certified",
-      grade: "Excellence",
-      description: "Advanced certification in statistical analysis, data visualization, and predictive modeling.",
+      grade: "Completed",
+      description: "Advanced certification in modern AI concepts, machine learning fundamentals, and AI applications.",
     },
     {
-      icon: BookOpen,
-      degree: "PhD in Progress",
-      field: "Artificial Intelligence",
-      institution: "Research University",
+      icon: Award,
+      degree: "Flutter UI Bootcamp",
+      field: "Mobile Development",
+      institution: "Udemy",
+      year: "2025",
+      status: "Certified",
+      grade: "Completed",
+      description: "Comprehensive training in Flutter framework for building cross-platform mobile applications.",
+    },
+    {
+      icon: Award,
+      degree: "Python for Data Science",
+      field: "Data Science & Analytics",
+      institution: "NPTEL",
+      year: "2025",
+      status: "Certified",
+      grade: "Completed",
+      description: "In-depth study of Python libraries for data analysis including Pandas, NumPy, and data visualization tools.",
+    },
+    {
+      icon: Award,
+      degree: "Software Engineering",
+      field: "Software Development",
+      institution: "Coursera",
       year: "2024",
-      status: "In Progress",
-      grade: "Current GPA: 4.0",
-      description: "Research focus on explainable AI and ethical machine learning systems.",
+      status: "Certified",
+      grade: "Completed",
+      description: "Professional certification covering software development lifecycle, design patterns, and best practices.",
+    },
+    {
+      icon: Award,
+      degree: "Responsive Web Design",
+      field: "Web Development",
+      institution: "FreeCodeCamp",
+      year: "2023",
+      status: "Certified",
+      grade: "Completed",
+      description: "Certification in modern responsive web design principles, HTML5, CSS3, and accessibility standards.",
+    },
+    {
+      icon: GraduationCap,
+      degree: "Intermediate",
+      field: "Science",
+      institution: "Vidya Bhavan Public School, Bareilly",
+      year: "2021 - 2022",
+      status: "Completed",
+      grade: "74%",
+      description: "Completed intermediate education with focus on science stream.",
+    },
+    {
+      icon: GraduationCap,
+      degree: "Matriculation",
+      field: "General",
+      institution: "Vidya Bhavan Public School, Bareilly",
+      year: "2019 - 2020",
+      status: "Completed",
+      grade: "90%",
+      description: "Completed secondary education with excellent academic performance.",
     },
   ];
 
@@ -63,9 +103,9 @@ const Qualifications = () => {
     <section className="section-padding bg-surface-subtle">
       <div className="container-prose">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Qualifications</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Education & Certifications</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Educational background and professional certifications
+            Academic background and professional certifications
           </p>
         </div>
 
@@ -93,7 +133,7 @@ const Qualifications = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="lg:flex-1 lg:max-w-md">
                     <p className="text-muted-foreground text-sm leading-relaxed">
                       {qual.description}

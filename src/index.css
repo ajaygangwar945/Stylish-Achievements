@@ -49,19 +49,19 @@
     /* Design System Tokens */
     --surface-elevated: 0 0% 100%;
     --surface-subtle: 210 25% 98%;
-    
+
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
     --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-glow)));
     --gradient-surface: linear-gradient(145deg, hsl(var(--card)), hsl(var(--surface-subtle)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(var(--surface-subtle)));
-    
+
     /* Shadows */
     --shadow-soft: 0 2px 8px -2px hsl(var(--primary) / 0.08);
     --shadow-medium: 0 4px 16px -4px hsl(var(--primary) / 0.12);
     --shadow-strong: 0 8px 32px -8px hsl(var(--primary) / 0.16);
     --shadow-glow: 0 0 24px hsl(var(--primary) / 0.15);
-    
+
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -89,30 +89,37 @@
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 222.2 47% 11%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 222.2 47% 11%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted-foreground: 215 20.2% 75%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 175 85% 55%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
+    --success: 142 76% 36%;
+    --warning: 38 92% 50%;
+
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+
+    --surface-elevated: 222.2 47% 11%;
+    --surface-subtle: 222.2 47% 8%;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -129,6 +136,10 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -136,6 +147,7 @@
 }
 
 @layer components {
+
   /* Portfolio Design Components */
   .section-padding {
     @apply px-6 py-16 lg:px-8 lg:py-24;
@@ -147,23 +159,88 @@
 
   .gradient-text {
     @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+    animation: gradient-shift 3s ease infinite;
   }
 
   .glass-card {
     @apply backdrop-blur-sm border border-white/20 rounded-xl;
-    background: linear-gradient(135deg, 
-      hsla(var(--card), 0.9), 
-      hsla(var(--surface-subtle), 0.8)
-    );
+    background: linear-gradient(135deg,
+        hsla(var(--card), 0.9),
+        hsla(var(--surface-subtle), 0.8));
     box-shadow: var(--shadow-soft);
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .glass-card:hover {
+    transform: translateY(-8px) rotateX(2deg) rotateY(2deg);
+    box-shadow: 0 20px 40px -10px rgba(59, 130, 246, 0.3);
   }
 
   .hover-lift {
-    @apply transform transition-all duration-300 hover:scale-105 hover:shadow-lg;
+    @apply transform transition-all duration-300;
     transition: var(--transition-smooth);
+    transform-style: preserve-3d;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px -5px rgba(59, 130, 246, 0.25);
   }
 
   .social-link {
-    @apply inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 text-primary transition-all duration-300 hover:from-primary hover:to-accent hover:text-white hover:scale-110 hover:shadow-glow;
+    @apply inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 text-primary transition-all duration-300 hover:from-primary hover:to-accent hover:text-white hover:shadow-glow;
+    transform-style: preserve-3d;
+  }
+
+  .social-link:hover {
+    transform: scale(1.15) rotateY(10deg);
+  }
+
+  /* 3D Animation Keyframes */
+  @keyframes gradient-shift {
+
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes pulse-glow {
+
+    0%,
+    100% {
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    }
+
+    50% {
+      box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
+    }
+  }
+
+  /* Floating animation for hero section */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Pulse glow for important elements */
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
   }
 }
