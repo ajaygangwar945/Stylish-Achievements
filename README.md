@@ -1,8 +1,8 @@
 <div align="center">
   
-# 💖 Lovable Web Application  
+# � Stylized Achievements Portfolio
 
-### ⚡ Build • Customize • Deploy — Faster with Lovable
+### 🚀 Modern • Interactive • 3D Experiences
 
 ![Status](https://img.shields.io/badge/Status-Active-success?style=flat)
 ![Vite](https://img.shields.io/badge/Vite-⚡-646CFF?style=flat&logo=vite&logoColor=white)
@@ -20,28 +20,28 @@
 
 ## 📌 Project Overview
 
-This is a **Lovable-powered web application** built using a modern frontend stack.  
-It enables **rapid UI development**, **prompt-based editing**, and **instant deployment** — all while keeping full control through GitHub.
+This is a **modern personal website & portfolio** built with a cutting-edge frontend stack.  
+It features **immersive 3D animations**, **glassmorphism UI**, and **interactive elements** to showcase achievements and qualifications in style.
 
-Perfect for:
+Perfect for showcasing:
 
-- 🚀 Rapid prototyping  
-- 🎨 UI-first applications  
-- 🧠 AI-assisted development  
-- 🌐 Production-ready deployments  
+- 🚀 Professional Portfolio
+- 🎨 Design Skills
+- 🧠 Technical Achievements
+- 🌐 Academic Qualifications
 
 ---
 
 ## ✨ Key Highlights
 
-- ⚡ Instant development with **Vite**
+- ⚡ Instant loading with **Vite**
 - 🧩 Component-driven UI with **React**
 - 🟦 Type-safe code using **TypeScript**
 - 🎨 Beautiful UI via **shadcn/ui**
 - 🌈 Utility-first styling with **Tailwind CSS**
 - ✨ Immersive 3D Experiences with **React Three Fiber**
-- 🔄 Auto-sync between Lovable & GitHub
-- 🚀 One-click deployment from Lovable
+- � Fully Responsive Design
+- 🚀 Optimized for Performance
 
 ---
 
@@ -54,41 +54,27 @@ Perfect for:
 | 🟦 TypeScript | Type safety |
 | 🎨 shadcn/ui | Reusable UI components |
 | 🌈 Tailwind CSS | Styling |
-| 🧊 local Three.js / R3F | 3D Graphics & Animations |
-| 💖 Lovable | AI-assisted development & hosting |
+| 🧊 React Three Fiber | 3D Graphics & Animations |
+| ☁️ Vercel | Hosting & Deployment |
 
 ---
 
-## ✏️ How to Edit This Project
+## ✏️ How to Run Locally
 
-### 🧠 Option 1: Use Lovable (Recommended)
+### Prerequisites
 
-- Open the project in Lovable  
-- Prompt changes directly  
-- Auto-commits to GitHub  
+- Node.js
+- npm
+- (Recommended) nvm
 
-👉 **Project Link:**  
-
-[![Live Project](https://img.shields.io/badge/🌐_Live_Project-Visit-success?style=flat)](https://stylish-achievements.vercel.app/)
-
----
-
-### 💻 Option 2: Use Your Own IDE
-
-#### 📦 Prerequisites
-
-- Node.js  
-- npm  
-- (Recommended) nvm  
-
-#### 🚀 Setup Steps
+### 🚀 Setup Steps
 
 ```bash
 # Clone the repository
-git clone <YOUR_GIT_URL>
+git clone https://github.com/ajaygangwar945/Stylish-Achievements.git
 
 # Move into project directory
-cd <YOUR_PROJECT_NAME>
+cd Stylish-Achievements
 
 # Install dependencies
 npm install
@@ -97,55 +83,25 @@ npm install
 npm run dev
 ```
 
-### 📝 Option 3: Edit Directly on GitHub
-
-- Open any file in the repository  
-- Click ✏️ **Edit**  
-- Commit your changes  
-
-✔️ Best for quick edits and minor fixes.
-
 ---
 
-### ☁️ Option 4: Use GitHub Codespaces
+## � Deployment
 
-- Click **Code → Codespaces**  
-- Create a new Codespace  
-- Edit, commit, and push changes  
+This project is deployed using **Vercel** for instant updates and global CDN performance.
 
-🚀 No local setup required.
-
----
-
-## 🚀 Deployment
-
-Deploy your application instantly using **Vercel**:
-
-1. Open the project in Vercel
-2. Connect your GitHub repository
-3. Your app goes live 🌍  
-
----
-
-## 🌐 Custom Domain Support
-
-Yes, custom domains are supported.
-
-### Steps
-
-1. Go to **Project → Settings → Domains**  
-2. Click **Connect Domain**  
-3. Follow the DNS instructions  
+1. Updates are pushed to **GitHub**.
+2. **Vercel** automatically rebuilds and deploys the changes.
+3. The live site is updated instantly 🌍
 
 ---
 
 ## 🧭 Future Enhancements (Planned)
 
-- 📱 Mobile-first improvements  
-- 🧠 AI-driven UX refinements  
-- 🌍 SEO optimization  
-- 📊 Analytics integration  
-- 🔐 Authentication support  
+- 📱 Mobile-first improvements
+- 🧠 AI-driven UX refinements
+- 🌍 SEO optimization
+- 📊 Analytics integration
+- 🔐 Dark Mode improvements
 
 ---
 
@@ -153,17 +109,17 @@ Yes, custom domains are supported.
 
 Contributions are welcome!
 
-1. Fork the repository  
-2. Create a new branch  
-3. Submit a pull request  
+1. Fork the repository
+2. Create a new branch
+3. Submit a pull request
 
 ---
 
 ## 👨‍💻 Author
 
-**Ajay Gangwar**  
+**Ajay Gangwar**
 
-🎓 Student | 💻 Frontend / Full Stack Developer  
+🎓 Student | 💻 Frontend / Full Stack Developer
 
 ---
 
