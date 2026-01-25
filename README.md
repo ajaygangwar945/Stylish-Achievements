@@ -11,6 +11,7 @@
 ![Tailwind](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
 ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-UI-black?style=flat)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat)
+
 [![Live Project](https://img.shields.io/badge/🌐_Live_Project-Visit-success?style=flat)](https://stylish-achievements.vercel.app/)
 
 </div>
@@ -39,7 +40,8 @@ Perfect for showcasing:
 - 🎨 Beautiful UI via **shadcn/ui**
 - 🌈 Utility-first styling with **Tailwind CSS**
 - ✨ Immersive 3D Experiences with **React Three Fiber**
-- � Fully Responsive Design
+- 🔗 **Interactive Certification Links**
+- 📱 Fully Responsive Design
 - 🚀 Optimized for Performance
 
 ---

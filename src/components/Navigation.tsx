@@ -11,8 +11,10 @@ const Navigation = () => {
   const navLinks = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
+    { id: "projects", label: "Projects" },
     { id: "achievements", label: "Achievements" },
-    { id: "qualifications", label: "Qualifications" },
+    { id: "certifications", label: "Certifications" },
+    { id: "education", label: "Education" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -58,8 +60,8 @@ const Navigation = () => {
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-            ? "bg-background/95 backdrop-blur-md shadow-lg border-b"
-            : "bg-transparent"
+          ? "bg-background/95 backdrop-blur-md shadow-lg border-b"
+          : "bg-transparent"
           }`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -79,8 +81,8 @@ const Navigation = () => {
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
                   className={`text-sm font-medium transition-colors hover:text-primary ${activeSection === link.id
-                      ? "text-primary"
-                      : "text-muted-foreground"
+                    ? "text-primary"
+                    : "text-muted-foreground"
                     }`}
                 >
                   {link.label}
@@ -117,8 +119,8 @@ const Navigation = () => {
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
                   className={`block w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-colors ${activeSection === link.id
-                      ? "bg-primary text-primary-foreground"
-                      : "hover:bg-accent text-muted-foreground"
+                    ? "bg-primary text-primary-foreground"
+                    : "hover:bg-accent text-muted-foreground"
                     }`}
                 >
                   {link.label}
