@@ -1,6 +1,6 @@
 <div align="center">
   
-# � Stylized Achievements Portfolio
+# ✨ Stylized Achievements Portfolio
 
 ### 🚀 Modern • Interactive • 3D Experiences
 
@@ -11,7 +11,6 @@
 ![Tailwind](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
 ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-UI-black?style=flat)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat)
-
 [![Live Project](https://img.shields.io/badge/🌐_Live_Project-Visit-success?style=flat)](https://stylish-achievements.vercel.app/)
 
 </div>
