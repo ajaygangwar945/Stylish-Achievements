@@ -12,7 +12,7 @@
 ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-UI-black?style=flat)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat)
 
-[![Live Project](https://img.shields.io/badge/🌐_Live_Project-Visit-success?style=flat)](https://lovable.dev/projects/587e70a3-7f47-4698-866d-c0543ca8a141)
+[![Live Project](https://img.shields.io/badge/🌐_Live_Project-Visit-success?style=flat)](https://stylish-achievements.vercel.app/)
 
 </div>
 
@@ -69,7 +69,7 @@ Perfect for:
 
 👉 **Project Link:**  
 
-[![Live Project](https://img.shields.io/badge/🌐_Live_Project-Visit-success?style=flat)](https://lovable.dev/projects/587e70a3-7f47-4698-866d-c0543ca8a141)
+[![Live Project](https://img.shields.io/badge/🌐_Live_Project-Visit-success?style=flat)](https://stylish-achievements.vercel.app/)
 
 ---
 
@@ -119,10 +119,10 @@ npm run dev
 
 ## 🚀 Deployment
 
-Deploy your application instantly using **Lovable**:
+Deploy your application instantly using **Vercel**:
 
-1. Open the project in Lovable  
-2. Click **Share → Publish**  
+1. Open the project in Vercel
+2. Connect your GitHub repository
 3. Your app goes live 🌍  
 
 ---
