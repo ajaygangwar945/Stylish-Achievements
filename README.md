@@ -41,7 +41,8 @@ Perfect for showcasing:
 - 🌈 Utility-first styling with **Tailwind CSS**
 - ✨ Immersive 3D Experiences with **React Three Fiber**
 - 🔗 **Interactive Certification Links**
-- 📱 Fully Responsive Design
+- 📱 **Fully Responsive Design** - Optimized for mobile and desktop
+- 🎨 **Custom Themed Scrollbar** - Matches website aesthetic
 - 🚀 Optimized for Performance
 
 ---
@@ -86,7 +87,7 @@ npm run dev
 
 ---
 
-## � Deployment
+## 🌐 Deployment
 
 This project is deployed using **Vercel** for instant updates and global CDN performance.
 
@@ -98,11 +99,10 @@ This project is deployed using **Vercel** for instant updates and global CDN per
 
 ## 🧭 Future Enhancements (Planned)
 
-- 📱 Mobile-first improvements
 - 🧠 AI-driven UX refinements
 - 🌍 SEO optimization
 - 📊 Analytics integration
-- 🔐 Dark Mode improvements
+- 🌙 Enhanced dark mode features
 
 ---
 
