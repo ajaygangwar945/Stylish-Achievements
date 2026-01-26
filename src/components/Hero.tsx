@@ -44,7 +44,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer" onClick={() => {
+      <div className="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer" onClick={() => {
         const aboutSection = document.getElementById('about');
         if (aboutSection) {
           aboutSection.scrollIntoView({ behavior: 'smooth' });
