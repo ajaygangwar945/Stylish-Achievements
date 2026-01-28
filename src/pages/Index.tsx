@@ -4,6 +4,7 @@ import Achievements from "@/components/Achievements";
 import Qualifications from "@/components/Qualifications";
 import SocialMedia from "@/components/SocialMedia";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import AnimatedBackground from "@/components/AnimatedBackground";
 
@@ -29,6 +30,7 @@ const Index = () => {
           <SocialMedia />
         </section>
       </main>
+      <Footer />
       <ScrollToTop />
     </>
   );

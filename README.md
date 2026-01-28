@@ -1,3 +1,5 @@
+<img src="./public/Gemini_Generated_Image_j019jaj019jaj019.png" width="100%" height="200" align="center">
+
 <div align="center">
   
 # ✨ Stylized Achievements Portfolio
@@ -10,7 +12,6 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat&logo=typescript&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
 ![shadcn/ui](https://img.shields.io/badge/shadcn/ui-UI-black?style=flat)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat)
 
 [![Live Project](https://img.shields.io/badge/🌐_Live_Project-Visit-success?style=flat)](https://stylish-achievements.vercel.app/)
 
@@ -61,6 +62,29 @@ Perfect for showcasing:
 
 ---
 
+## 📂 Project Structure
+
+```text
+Stylish-Achievements/
+├── public/                # Static assets (images, icons, robots.txt)
+├── src/
+│   ├── components/        # Functional React components
+│   │   ├── ui/            # shadcn/ui foundation components
+│   │   ├── Footer.tsx     # Site-wide footer
+│   │   ├── Navigation.tsx # Nav bar with cross-page routing
+│   │   └── ...            # Hero, Achievements, About, etc.
+│   ├── pages/             # Page layouts (Home, Projects, 404)
+│   ├── hooks/             # Custom React hooks (hooks, state)
+│   ├── lib/               # Shared utilities (cn, etc.)
+│   ├── App.tsx            # Main router & app logic
+│   ├── main.tsx           # React DOM entry point
+│   └── index.css          # Global styles & Tailwind directives
+├── index.html             # Main HTML entry
+├── package.json           # Dependencies & scripts
+├── tailwind.config.ts     # Styling configuration
+└── vite.config.ts         # Build & dev server config
+```
+
 ## ✏️ How to Run Locally
 
 ### Prerequisites
@@ -91,9 +115,11 @@ npm run dev
 
 This project is deployed using **Vercel** for instant updates and global CDN performance.
 
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Deployed-black?style=flat&logo=vercel)](https://stylish-achievements.vercel.app/)
+
 1. Updates are pushed to **GitHub**.
 2. **Vercel** automatically rebuilds and deploys the changes.
-3. The live site is updated instantly 🌍
+3. The live site is updated instantly 🌍 [Visit Live Site](https://stylish-achievements.vercel.app/)
 
 ---
 
@@ -113,14 +139,6 @@ Contributions are welcome!
 1. Fork the repository
 2. Create a new branch
 3. Submit a pull request
-
----
-
-## 👨‍💻 Author
-
-**Ajay Gangwar**
-
-🎓 Student | 💻 Frontend / Full Stack Developer
 
 ---
 

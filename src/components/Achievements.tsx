@@ -1,15 +1,26 @@
+import { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Trophy, Award, Star, Medal, ExternalLink, Github, Shield, Code } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Trophy, Award, Star, Medal, ExternalLink, Github, Shield, Code, ChevronDown, ChevronUp, ArrowRight } from "lucide-react";
 
-const Achievements = () => {
+interface AchievementsProps {
+  isFullPage?: boolean;
+}
+
+const Achievements = ({ isFullPage = false }: AchievementsProps) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [showAllProjects, setShowAllProjects] = useState(isFullPage);
+
   const projects = [
     {
       icon: Star,
       title: "Ayush Healthcare Platform",
       description: "Architected a React and FastAPI platform with 35% latency reduction and 95% accuracy in medical term mapping",
       year: "2025",
-      category: "Project",
+      category: "React, FastAPI, NLP",
       link: "https://icd-mapping.onrender.com/",
       imageUrl: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80" // Medical/Healthcare placeholder
     },
@@ -18,7 +29,7 @@ const Achievements = () => {
       title: "ATS Resume Score",
       description: "Engineered an AI-powered ATS analyzer that reduced resume screening time by 70% with 92% accuracy",
       year: "2025",
-      category: "Project",
+      category: "AI, Streamlit, NLP",
       link: "https://ats-resume-score-945.streamlit.app/",
       imageUrl: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80" // Document/Analysis placeholder
     },
@@ -27,7 +38,7 @@ const Achievements = () => {
       title: "Weather App",
       description: "A React-based weather application that provides real-time weather data using the OpenWeatherMap API, with city search and geolocation support.",
       year: "2025",
-      category: "Project",
+      category: "React, OpenWeather API",
       link: "https://weather-forcasting-temperature.netlify.app/",
       imageUrl: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80" // Weather placeholder
     },
@@ -36,7 +47,7 @@ const Achievements = () => {
       title: "Cyber Warfare Intrusion Detection System",
       description: "An interactive, real-time intrusion detection dashboard designed to detect malicious activities and cyber attacks using ML.",
       year: "2025",
-      category: "Cyber Security",
+      category: "Python, ML, React",
       link: "https://cyber-warfare-intrusion-detection.onrender.com/",
       imageUrl: "/cyber-warfare.png" // Generated image
     },
@@ -45,7 +56,7 @@ const Achievements = () => {
       title: "AI-Powered Portfolio",
       description: "Personal portfolio built with React and Vite, featuring Gemini AI integration for an interactive chatbot and project idea generator.",
       year: "2025",
-      category: "Portfolio",
+      category: "React, Vite, Gemini AI",
       link: "https://ajay-gangwar-portfolio.netlify.app/",
       imageUrl: "/ai-portfolio.png" // Generated image
     },
@@ -54,7 +65,7 @@ const Achievements = () => {
       title: "Pet Adoption Platform",
       description: "Engineered a responsive web platform with 30% increased user engagement through dynamic galleries",
       year: "2024",
-      category: "Project",
+      category: "React, Tailwind CSS",
       link: "https://pet-adoption-animal-welfare.netlify.app/",
       imageUrl: "https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&q=80" // Pet/Dog placeholder
     },
@@ -95,15 +106,19 @@ const Achievements = () => {
         {/* Projects Section */}
         <div id="projects" className="mb-24 scroll-mt-28">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Featured Projects</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              {isFullPage ? "All Projects" : "Featured Projects"}
+            </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Innovative solutions and applications I've built
+              {isFullPage
+                ? "A comprehensive showcase of my technical work and creative projects"
+                : "Innovative solutions and applications I've built"}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {projects.map((project, index) => (
-              <Card key={index} className="glass-card hover-lift group relative overflow-hidden flex flex-col h-full border-muted/20">
+            {(showAllProjects ? projects : projects.slice(0, 4)).map((project, index) => (
+              <Card key={index} className="glass-card hover-lift group relative overflow-hidden flex flex-col h-full border-muted/20 animate-fade-in">
                 <div className="h-48 overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent z-10" />
                   <img
@@ -148,47 +163,67 @@ const Achievements = () => {
               </Card>
             ))}
           </div>
+
+          {!isFullPage && projects.length > 4 && (
+            <div className="mt-12 text-center overflow-hidden">
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => navigate("/projects")}
+                className="hover-lift glass-card border-primary/20 hover:border-primary/50 transition-all duration-300 min-w-[200px]"
+              >
+                <>
+                  <ArrowRight className="mr-2 h-5 w-5" />
+                  View All Projects
+                </>
+              </Button>
+            </div>
+          )}
+
+
         </div>
 
         {/* Achievements Section */}
-        <div id="achievements" className="scroll-mt-28">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Achievements & Awards</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Recognition and milestones in my development journey
-            </p>
-          </div>
+        {!isFullPage && (
+          <div id="achievements" className="scroll-mt-28">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Achievements & Awards</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Recognition and milestones in my development journey
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {awards.map((award, index) => (
-              <Card key={index} className="glass-card hover-lift group relative overflow-hidden">
-                <CardHeader>
-                  <div className="flex items-start justify-between">
-                    <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-accent text-white">
-                      <award.icon className="h-6 w-6" />
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              {awards.map((award, index) => (
+                <Card key={index} className="glass-card hover-lift group relative overflow-hidden">
+                  <CardHeader>
+                    <div className="flex items-start justify-between">
+                      <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-accent text-white">
+                        <award.icon className="h-6 w-6" />
+                      </div>
+                      <Badge variant="secondary" className="text-xs">
+                        {award.year}
+                      </Badge>
                     </div>
-                    <Badge variant="secondary" className="text-xs">
-                      {award.year}
-                    </Badge>
-                  </div>
-                  <CardTitle className="text-lg mt-2 group-hover:text-primary transition-colors">
-                    {award.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                    {award.description}
-                  </p>
-                  <div className="flex items-center justify-between mt-auto">
-                    <Badge variant="outline" className="text-xs">
-                      {award.category}
-                    </Badge>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                    <CardTitle className="text-lg mt-2 group-hover:text-primary transition-colors">
+                      {award.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                      {award.description}
+                    </p>
+                    <div className="flex items-center justify-between mt-auto">
+                      <Badge variant="outline" className="text-xs">
+                        {award.category}
+                      </Badge>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );
