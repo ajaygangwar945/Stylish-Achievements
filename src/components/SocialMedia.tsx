@@ -3,8 +3,7 @@ import {
   Github,
   Linkedin,
   Mail,
-  Globe,
-  Phone
+  Globe
 } from "lucide-react";
 
 const SocialMedia = () => {
@@ -37,13 +36,6 @@ const SocialMedia = () => {
       url: "mailto:ajaygangwar945@gmail.com",
       description: "Direct contact for collaborations",
     },
-    {
-      icon: Phone,
-      name: "Mobile",
-      handle: "+91-8283024392",
-      url: "tel:+918283024392",
-      description: "Contact via phone",
-    },
   ];
 
   return (
@@ -56,14 +48,14 @@ const SocialMedia = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-6 mb-12 max-w-5xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-6 mb-12 max-w-6xl mx-auto">
           {socialLinks.map((link, index) => (
             <a
               key={index}
               href={link.url}
               target={link.url.startsWith('http') ? '_blank' : undefined}
               rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
-              className="block w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+              className="block w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]"
             >
               <Card className="glass-card hover-lift group cursor-pointer h-full">
                 <CardContent className="p-6 text-center">
@@ -75,7 +67,7 @@ const SocialMedia = () => {
                   <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
                     {link.name}
                   </h3>
-                  <p className="text-sm text-muted-foreground mb-2">
+                  <p className="text-sm text-muted-foreground mb-2 break-all px-1">
                     {link.handle}
                   </p>
                   <p className="text-xs text-muted-foreground leading-relaxed">

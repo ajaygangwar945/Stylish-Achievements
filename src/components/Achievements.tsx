@@ -16,6 +16,15 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
 
   const projects = [
     {
+      icon: Code,
+      title: "Portfolio Hub",
+      description: "A multi-portfolio hub featuring 16 technology portals with glassmorphic UI, 3D visuals, and interactive data dashboards using Three.js.",
+      year: "2026",
+      category: "HTML, CSS, JS, Three.js",
+      link: "https://github.com/ajaygangwar945/Portfolio-Hub",
+      imageUrl: "/portfolio-hub.png"
+    },
+    {
       icon: Star,
       title: "Ayush Healthcare Platform",
       description: "Architected a React and FastAPI platform with 35% latency reduction and 95% accuracy in medical term mapping",
@@ -34,15 +43,6 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       imageUrl: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80" // Document/Analysis placeholder
     },
     {
-      icon: Trophy,
-      title: "Weather App",
-      description: "A React-based weather application that provides real-time weather data using the OpenWeatherMap API, with city search and geolocation support.",
-      year: "2025",
-      category: "React, OpenWeather API",
-      link: "https://weather-forcasting-temperature.netlify.app/",
-      imageUrl: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80" // Weather placeholder
-    },
-    {
       icon: Shield,
       title: "Cyber Warfare Intrusion Detection System",
       description: "An interactive, real-time intrusion detection dashboard designed to detect malicious activities and cyber attacks using ML.",
@@ -53,7 +53,7 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
     },
     {
       icon: Code,
-      title: "AI-Powered Portfolio",
+      title: "Portfolio",
       description: "Personal portfolio built with React and Vite, featuring Gemini AI integration for an interactive chatbot and project idea generator.",
       year: "2025",
       category: "React, Vite, Gemini AI",
@@ -61,24 +61,59 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       imageUrl: "/ai-portfolio.png" // Generated image
     },
     {
+      icon: Medal,
+      title: "Indian Rainfall Data Analysis",
+      description: "Comprehensive Rainfall EDA & Machine Learning project built with Python (Pandas/Scikit-learn) and a premium Three.js web dashboard.",
+      year: "2025",
+      category: "Python, ML, Three.js",
+      link: "https://github.com/ajaygangwar945/Rainfall-Data-Analysis-Project",
+      imageUrl: "/rainfall-analysis.png"
+    },
+    {
+      icon: Trophy,
+      title: "Global Terrorism Analysis",
+      description: "Interactive Power BI dashboard analyzing global terrorism trends with KPIs and advanced mapping visuals.",
+      year: "2025",
+      category: "Power BI, Data Analysis",
+      link: "https://github.com/ajaygangwar945/Global-Terrorism-Analysis",
+      imageUrl: "/terrorism-analysis.png"
+    },
+    {
+      icon: Star,
+      title: "Ayush FHIR Platform",
+      description: "Healthcare interoperability platform integrating traditional Ayush systems with HL7 FHIR standards for secure data exchange.",
+      year: "2025",
+      category: "React, Healthcare, FHIR",
+      link: "https://github.com/ajaygangwar945/SIH",
+      imageUrl: "/ayush-fhir.png"
+    },
+    {
+      icon: Trophy,
+      title: "Weather App",
+      description: "A React-based weather application that provides real-time weather data using the OpenWeatherMap API, with city search and geolocation support.",
+      year: "2024",
+      category: "React, OpenWeather API",
+      link: "https://weather-forcasting-temperature.netlify.app/",
+      imageUrl: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80" // Weather placeholder
+    },
+    {
+      icon: Shield,
+      title: "SoftHub",
+      description: "Node.js & Express backend featuring secure JWT authentication, MongoDB integration, and email-based OTP password reset functionality.",
+      year: "2024",
+      category: "Node.js, Express, MongoDB",
+      link: "https://github.com/ajaygangwar945/SoftHub",
+      imageUrl: "/softhub-backend.png"
+    },
+    {
       icon: Award,
       title: "Pet Adoption Platform",
       description: "Engineered a responsive web platform with 30% increased user engagement through dynamic galleries",
-      year: "2024",
+      year: "2023",
       category: "React, Tailwind CSS",
       link: "https://pet-adoption-animal-welfare.netlify.app/",
       imageUrl: "https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&q=80" // Pet/Dog placeholder
     },
-    // Example of how to add a GitHub project with auto-generated image:
-    // {
-    //   icon: Github,
-    //   title: "Your GitHub Project",
-    //   description: "Description of the project...",
-    //   year: "2024",
-    //   category: "Open Source",
-    //   link: "https://github.com/ajaygangwar945/repository-name",
-    //   imageUrl: "https://opengraph.githubassets.com/1/ajaygangwar945/repository-name"
-    // },
   ];
 
   const awards = [
