@@ -21,7 +21,7 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       description: "A multi-portfolio hub featuring 16 technology portals with glassmorphic UI, 3D visuals, and interactive data dashboards using Three.js.",
       year: "2026",
       category: "HTML, CSS, JS, Three.js",
-      link: "https://github.com/ajaygangwar945/Portfolio-Hub",
+      link: "https://ajay-portfolio-hub.vercel.app",
       imageUrl: "/portfolio-hub.png"
     },
     {
@@ -66,7 +66,7 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       description: "Comprehensive Rainfall EDA & Machine Learning project built with Python (Pandas/Scikit-learn) and a premium Three.js web dashboard.",
       year: "2025",
       category: "Python, ML, Three.js",
-      link: "https://github.com/ajaygangwar945/Rainfall-Data-Analysis-Project",
+      link: "https://ajaygangwar945.github.io/Rainfall-Data-Analysis-Project/",
       imageUrl: "/rainfall-analysis.png"
     },
     {
@@ -75,7 +75,7 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       description: "Interactive Power BI dashboard analyzing global terrorism trends with KPIs and advanced mapping visuals.",
       year: "2025",
       category: "Power BI, Data Analysis",
-      link: "https://github.com/ajaygangwar945/Global-Terrorism-Analysis",
+      link: "https://app.powerbi.com/view?r=eyJrIjoiNTY4YWQxMGItNGFhMC00ZWQ4LThlZjUtMDY0NWY4OGJkYjdhIiwidCI6ImUxNGU3M2ViLTUyNTEtNDM4OC04ZDY3LThmOWYyZTJkNWE0NiIsImMiOjEwfQ%3D%3D",
       imageUrl: "/terrorism-analysis.png"
     },
     {
@@ -84,7 +84,7 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       description: "Healthcare interoperability platform integrating traditional Ayush systems with HL7 FHIR standards for secure data exchange.",
       year: "2025",
       category: "React, Healthcare, FHIR",
-      link: "https://github.com/ajaygangwar945/SIH",
+      link: "https://sih-ayush-fhir.vercel.app/",
       imageUrl: "/ayush-fhir.png"
     },
     {
@@ -102,7 +102,7 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       description: "Node.js & Express backend featuring secure JWT authentication, MongoDB integration, and email-based OTP password reset functionality.",
       year: "2024",
       category: "Node.js, Express, MongoDB",
-      link: "https://github.com/ajaygangwar945/SoftHub",
+      link: "https://softhub-bwnd.onrender.com/",
       imageUrl: "/softhub-backend.png"
     },
     {
