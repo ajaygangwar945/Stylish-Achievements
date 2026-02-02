@@ -1,4 +1,4 @@
-<img src="./public/Gemini_Generated_Image_j019jaj019jaj019.png" width="100%" height="200" align="center">
+<img src="./public/Gemini_Generated_Image_j019jaj019jaj019.png" width="100%" height="200" style="object-fit: cover" align="center">
 
 <div align="center">
   
@@ -41,9 +41,10 @@ Perfect for showcasing:
 - 🎨 Beautiful UI via **shadcn/ui**
 - 🌈 Utility-first styling with **Tailwind CSS**
 - ✨ Immersive 3D Experiences with **React Three Fiber**
+- 🤖 **AI-Generated Project Assets** - High-quality, context-aware imagery
 - 🔗 **Interactive Certification Links**
 - 📱 **Fully Responsive Design** - Optimized for mobile and desktop
-- 🎨 **Custom Themed Scrollbar** - Matches website aesthetic
+- ✉️ **Optimized Contact Hub** - LinkedIn, GitHub, Portfolio & Email integration
 - 🚀 Optimized for Performance
 
 ---
