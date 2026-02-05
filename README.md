@@ -70,21 +70,32 @@ Stylish-Achievements/
 ├── public/                # Static assets (images, icons, robots.txt)
 ├── src/
 │   ├── components/        # Functional React components
-│   │   ├── ui/            # shadcn/ui foundation components
-│   │   ├── Footer.tsx     # Site-wide footer
+│   │   ├── ui/            # shadcn/ui foundation components (Button, Input, etc.)
+│   │   ├── Scene3D.tsx    # Immersive 3D Graphics & Animations
 │   │   ├── Navigation.tsx # Nav bar with cross-page routing
-│   │   └── ...            # Hero, Achievements, About, etc.
-│   ├── pages/             # Page layouts (Home, Projects, 404)
-│   ├── hooks/             # Custom React hooks (hooks, state)
-│   ├── lib/               # Shared utilities (cn, etc.)
-│   ├── App.tsx            # Main router & app logic
+│   │   ├── SocialMedia.tsx # Interactive social links
+│   │   └── ...            # Hero, Achievements, About, Footer, etc.
+│   ├── pages/             # Site pages (Index, Projects, NotFound)
+│   ├── hooks/             # Custom React hooks (use-mobile, use-toast)
+│   ├── lib/               # Shared utilities (Tailwind merge, etc.)
+│   ├── App.tsx            # Main router & application entrance
 │   ├── main.tsx           # React DOM entry point
-│   └── index.css          # Global styles & Tailwind directives
-├── index.html             # Main HTML entry
-├── package.json           # Dependencies & scripts
-├── tailwind.config.ts     # Styling configuration
-└── vite.config.ts         # Build & dev server config
+│   └── index.css          # Core design system & Tailwind directives
+├── components.json        # shadcn/ui workspace configuration
+├── tailwind.config.ts     # Styling & theme customization
+├── vite.config.ts         # Build tool & dev server configuration
+├── vercel.json           # Deployment & routing configuration
+└── package.json           # Dependencies, scripts, & metadata
 ```
+
+## 🛡️ Security
+
+A recent security audit was performed to ensure the project maintains high standards of safety:
+
+- **Zero Secrets Policy**: No hardcoded API keys or sensitive credentials.
+- **Dependency Guard**: Regular audits via `npm audit` to patch high-priority vulnerabilities.
+- **Environment Safety**: Hardened `.gitignore` to prevent accidental exposure of configuration files.
+- **Sanitized UI**: No usage of insecure React patterns like `dangerouslySetInnerHTML`.
 
 ## ✏️ How to Run Locally
 
