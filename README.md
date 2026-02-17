@@ -41,11 +41,11 @@ Perfect for showcasing:
 - 🎨 Beautiful UI via **shadcn/ui**
 - 🌈 Utility-first styling with **Tailwind CSS**
 - ✨ Immersive 3D Experiences with **React Three Fiber**
-- 🤖 **AI-Generated Project Assets** - High-quality, context-aware imagery
-- 🔗 **Interactive Certification Links**
-- 📱 **Fully Responsive Design** - Optimized for mobile and desktop
-- ✉️ **Optimized Contact Hub** - LinkedIn, GitHub, Portfolio & Email integration
-- 🚀 Optimized for Performance
+- 🤖 **AI-Integrated Assets** - Mix of high-quality local & AI-generated imagery
+- 🔗 **Verified Project Portals** - Direct links to live platforms
+- 📱 **Modern Responsiveness** - Optimized for all device sizes
+- ✉️ **Contact Ecosystem** - Integrated professional & social touchpoints
+- 🚀 High-Performance Architecture
 
 ---
 
@@ -67,17 +67,17 @@ Perfect for showcasing:
 
 ```text
 Stylish-Achievements/
-├── public/                # Static assets (images, icons, robots.txt)
+├── public/                # Static assets (Project banners, icons, robots.txt)
 ├── src/
-│   ├── components/        # Functional React components
+│   ├── components/        # Optimized React components
 │   │   ├── ui/            # shadcn/ui foundation components (Button, Input, etc.)
 │   │   ├── Scene3D.tsx    # Immersive 3D Graphics & Animations
 │   │   ├── Navigation.tsx # Nav bar with cross-page routing
-│   │   ├── SocialMedia.tsx # Interactive social links
-│   │   └── ...            # Hero, Achievements, About, Footer, etc.
+│   │   ├── Achievements.tsx # Main project portfolio engine
+│   │   └── ...            # Hero, About, SocialMedia, etc.
 │   ├── pages/             # Site pages (Index, Projects, NotFound)
-│   ├── hooks/             # Custom React hooks (use-mobile, use-toast)
-│   ├── lib/               # Shared utilities (Tailwind merge, etc.)
+│   ├── hooks/             # Utility hooks (use-toast)
+│   ├── lib/               # Shared logic & Tailwind utilities
 │   ├── App.tsx            # Main router & application entrance
 │   ├── main.tsx           # React DOM entry point
 │   └── index.css          # Core design system & Tailwind directives

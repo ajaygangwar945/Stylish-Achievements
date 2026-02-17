@@ -16,9 +16,27 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
 
   const projects = [
     {
+      icon: Star,
+      title: "Eventfolio",
+      description: "Ghibli-inspired interactive portfolio showcasing hackathons, leadership, and technical journeys using pure HTML, CSS, and JavaScript.",
+      year: "2026",
+      category: "HTML, CSS, JS",
+      link: "https://eventfolio.vercel.app/",
+      imageUrl: "/event.png"
+    },
+    {
+      icon: Medal,
+      title: "Certificates & Docs Portal",
+      description: "Interactive portal to organize, search, and showcase certificates & documents with intelligent filtering, dynamic theming, and premium UI.",
+      year: "2026",
+      category: "JavaScript, HTML, CSS",
+      link: "https://certificates-docs-portal.vercel.app/",
+      imageUrl: "/pdf.png"
+    },
+    {
       icon: Code,
       title: "Portfolio Hub",
-      description: "A multi-portfolio hub featuring 16 technology portals with glassmorphic UI, 3D visuals, and interactive data dashboards using Three.js.",
+      description: "A multi-portfolio hub featuring various technology portals with glassmorphic UI, 3D visuals, and interactive data dashboards using Three.js.",
       year: "2026",
       category: "HTML, CSS, JS, Three.js",
       link: "https://ajay-portfolio-hub.vercel.app",
@@ -113,6 +131,15 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       category: "React, Tailwind CSS",
       link: "https://pet-adoption-animal-welfare.netlify.app/",
       imageUrl: "https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&q=80" // Pet/Dog placeholder
+    },
+    {
+      icon: Code,
+      title: "Frontend Learning Hub",
+      description: "Front-end learning hub featuring an interactive 3D dashboard, modular content, and responsive UI design built with Three.js.",
+      year: "2020",
+      category: "HTML, CSS, JS, Three.js",
+      link: "https://ajaygangwar945.github.io/First-HTML-Project-Overview/",
+      imageUrl: "/front.png"
     },
   ];
 
