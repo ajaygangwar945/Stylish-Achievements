@@ -94,6 +94,7 @@ Stylish-Achievements/
 ## 📖 Technical Documentation
 
 For a deep dive into the **architecture, logic, and tech stack decisions**, check out the [PROJECT_DETAILS.txt](PROJECT_DETAILS.txt) file in the root directory. It covers:
+
 - Immersive 3D Graphics logic (Three.js)
 - Interactive Particle Background implementation
 - Security hardening breakdown
@@ -104,10 +105,13 @@ For a deep dive into the **architecture, logic, and tech stack decisions**, chec
 ## 🛡️ Security & Hardening
 
 This project follows a "Security-First" philosophy. Recent hardening includes:
+
 - **Zero Secrets Policy**: No hardcoded API keys or sensitive credentials.
 - **CSP & Headers**: Implemented **Content Security Policy** and response headers (`X-Frame-Options`, `X-Content-Type-Options`) via `vercel.json` to prevent clickjacking and XSS.
 - **Dependency Guard**: Regular audits via `npm audit` to patch high-priority vulnerabilities.
 - **Sanitized UI**: Protected against insecure React patterns like `dangerouslySetInnerHTML`.
+
+---
 
 ## ✏️ How to Run Locally
 
