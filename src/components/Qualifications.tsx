@@ -21,7 +21,7 @@ const Qualifications = () => {
       institution: "Vidya Bhavan Public School, Bareilly",
       year: "2021 - 2022",
       status: "Completed",
-      grade: "74%",
+      grade: "72%",
       description: "Completed intermediate education with focus on science stream.",
     },
     {

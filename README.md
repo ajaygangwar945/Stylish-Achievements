@@ -82,20 +82,32 @@ Stylish-Achievements/
 │   ├── main.tsx           # React DOM entry point
 │   └── index.css          # Core design system & Tailwind directives
 ├── components.json        # shadcn/ui workspace configuration
+├── PROJECT_DETAILS.txt    # Detailed technical documentation & logic docs
 ├── tailwind.config.ts     # Styling & theme customization
 ├── vite.config.ts         # Build tool & dev server configuration
 ├── vercel.json           # Deployment & routing configuration
 └── package.json           # Dependencies, scripts, & metadata
 ```
 
-## 🛡️ Security
+---
 
-A recent security audit was performed to ensure the project maintains high standards of safety:
+## 📖 Technical Documentation
 
+For a deep dive into the **architecture, logic, and tech stack decisions**, check out the [PROJECT_DETAILS.txt](PROJECT_DETAILS.txt) file in the root directory. It covers:
+- Immersive 3D Graphics logic (Three.js)
+- Interactive Particle Background implementation
+- Security hardening breakdown
+- Full application lifecycle
+
+---
+
+## 🛡️ Security & Hardening
+
+This project follows a "Security-First" philosophy. Recent hardening includes:
 - **Zero Secrets Policy**: No hardcoded API keys or sensitive credentials.
+- **CSP & Headers**: Implemented **Content Security Policy** and response headers (`X-Frame-Options`, `X-Content-Type-Options`) via `vercel.json` to prevent clickjacking and XSS.
 - **Dependency Guard**: Regular audits via `npm audit` to patch high-priority vulnerabilities.
-- **Environment Safety**: Hardened `.gitignore` to prevent accidental exposure of configuration files.
-- **Sanitized UI**: No usage of insecure React patterns like `dangerouslySetInnerHTML`.
+- **Sanitized UI**: Protected against insecure React patterns like `dangerouslySetInnerHTML`.
 
 ## ✏️ How to Run Locally
 

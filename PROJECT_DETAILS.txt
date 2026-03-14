@@ -1,0 +1,99 @@
+================================================================================
+PROJECT: STYLISH ACHIEVEMENTS PORTFOLIO
+AUTHOR: Ajay Gangwar
+DATE: March 14, 2026
+================================================================================
+
+1. PROJECT OVERVIEW
+-------------------
+"Stylish Achievements" is a premium, high-performance personal portfolio website 
+designed to showcase academic qualifications, technical projects, and professional 
+milestones. It uses an immersive "Glassmorphism" design language combined with 
+3D visual elements to provide a state-of-the-art user experience.
+
+2. CORE TECHNOLOGIES (THE "WHAT")
+---------------------------------
+The project is built using a modern, industry-standard frontend stack:
+
+* LANGUAGES: 
+  - TypeScript (TSX): For type-safe React components, reducing bugs.
+  - JavaScript (ES6+): For core logic and interactivity.
+  - HTML5: For semantic document structure.
+  - CSS3: For layout and custom animations.
+
+* FRAMEWORKS & BUILD TOOLS:
+  - React 18: The core UI library for component-based architecture.
+  - Vite: Next-generation frontend tool for lightning-fast development and builds.
+
+* STYLING:
+  - Tailwind CSS: A utility-first CSS framework for rapid and consistent styling.
+  - shadcn/ui: Premium, accessible UI components (Cards, Buttons, Badges).
+
+* VISUALS & ANIMATIONS:
+  - Three.js (React Three Fiber): Used for high-quality 3D graphics in the Hero section.
+  - Lucide React: For elegant, consistent iconography.
+  - HTML5 Canvas: Used for the interactive "Neural Network" particle background.
+
+3. ARCHITECTURE & LOGIC (THE "HOW")
+-----------------------------------
+
+A. ROUTING & STRUCTURE
+   The app is a Single Page Application (SPA). It uses 'react-router-dom' to 
+   handle navigation between the main Index page and the full Projects view.
+
+B. 3D INTEGRATION (Scene3D.tsx)
+   The Hero section features a 3D scene powered by @react-three/fiber. It 
+   renders floating geometric shapes (TorusKnot, Icosahedron) with physical 
+   standard materials that react to a "City" environment preset for realistic 
+   reflections.
+
+C. PARTICLE BACKGROUND (AnimatedBackground.tsx)
+   Behind the glass-morphic UI, a custom HTML5 Canvas particle system runs. 
+   Every particle is an object that moves independently. The logic calculates 
+   distances between particles; if they are close enough, a line is drawn, 
+   creating a "connected neural network" effect that feels alive.
+
+D. COMPONENT LOGIC
+   - Achievements.tsx: Uses a centralized 'projects' array. It maps through 
+     this data to render interactive cards. It features logic to "truncate" 
+     the project list to 4 items on the home page with a "View All" button.
+   - Qualifications.tsx: Organizes certs and degrees into clean, chronlogical 
+     lists with status badges (Completed, In Progress, Certified).
+
+4. WHY THESE CHOICES? (THE "WHY")
+---------------------------------
+
+* Why Vite? 
+  Unlike traditional build tools, Vite uses native ES modules to provide instant 
+  hot-reloading, making the development experience extremely smooth.
+
+* Why TypeScript? 
+  By defining interfaces for data (like the project and education objects), we 
+  ensure that no missing fields or typos cause the app to crash at runtime.
+
+* Why Glassmorphism? 
+  The "Glass-card" effect (translucent backgrounds with blur) creates a sense 
+  of depth and luxury, setting the portfolio apart from standard flat designs.
+
+* Why Security Hardening? 
+  The project includes a server-side security configuration (vercel.json) that 
+  enforces X-Frame-Options (blocks clickjacking) and Content-Type-Options, 
+  ensuring the user's data and the site's integrity are protected in production.
+
+5. FULL WORKING FLOW
+--------------------
+1. ENTRY: The browser loads 'main.tsx', which renders the 'App' component.
+2. PROVIDERS: The app is wrapped in 'ThemeProvider' (handling Dark/Light mode) 
+   and 'QueryClientProvider' (for efficient data fetching).
+3. RENDERING: React renders the 'Index' page, which mounts all sections 
+   simultaneously.
+4. INTERACTION: 
+   - Particles animate on a high-performance requestAnimationFrame loop.
+   - The 3D scene responds to auto-rotation and orbit controls.
+   - Navigation uses smooth-scrolling IDs to jump between sections.
+5. DEPLOYMENT: Vercel serves the static build globally, applying security 
+   headers and handling the SPA rewrites defined in 'vercel.json'.
+
+================================================================================
+DOCUMENTED BY ANTIGRAVITY AI | 2026
+================================================================================
