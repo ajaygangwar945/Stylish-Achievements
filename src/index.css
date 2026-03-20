@@ -169,11 +169,11 @@
 
   /* Portfolio Design Components */
   .section-padding {
-    @apply px-6 py-16 lg:px-8 lg:py-24;
+    @apply px-4 py-12 md:px-6 md:py-16 lg:px-8 lg:py-24;
   }
 
   .container-prose {
-    @apply max-w-4xl mx-auto;
+    @apply max-w-4xl mx-auto px-4 sm:px-6;
   }
 
   .gradient-text {

@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Trophy, Award, Star, Medal, ExternalLink, Github, Shield, Code, ChevronDown, ChevronUp, ArrowRight } from "lucide-react";
+import { Trophy, Award, Star, Medal, ExternalLink, Github, Shield, Code, ChevronDown, ChevronUp, ArrowRight, Gavel, Activity, Brain, FileText, BarChart3, FileCheck, GraduationCap, Globe } from "lucide-react";
 
 interface AchievementsProps {
   isFullPage?: boolean;
@@ -15,6 +15,78 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
   const [showAllProjects, setShowAllProjects] = useState(isFullPage);
 
   const projects = [
+    {
+      icon: Gavel,
+      title: "AI Legal Advisor",
+      description: "AI-powered legal assistance platform with document analysis and automated Q&A using Gemini AI.",
+      year: "2026",
+      category: "React, TypeScript, Gemini AI",
+      link: "https://ai-legal-advisor-chatbot.vercel.app/",
+      imageUrl: "/legal-advisor.png"
+    },
+    {
+      icon: Activity,
+      title: "MedPath Pro",
+      description: "Interactive hospital shortest-path visualizer using Dijkstra's algorithm for optimized healthcare logistics.",
+      year: "2026",
+      category: "JavaScript, Algorithms, HTML/CSS",
+      link: "https://medpath-pro.onrender.com/",
+      imageUrl: "/medpath-pro.png"
+    },
+    {
+      icon: Brain,
+      title: "Intelligence Explorer",
+      description: "Immersive AI learning dashboard featuring 3D visualizations and interactive elements built with Three.js.",
+      year: "2026",
+      category: "JavaScript, Three.js, HTML/CSS",
+      link: "https://intelligence-explorer.vercel.app/",
+      imageUrl: "/intelligence-explorer.png"
+    },
+    {
+      icon: FileText,
+      title: "CV Portfolio",
+      description: "Premium portfolio with glassmorphism, 3D effects, and integrated PDF previewer for a high-end user experience.",
+      year: "2026",
+      category: "JavaScript, HTML, CSS",
+      link: "https://ajaygangwar945.github.io/CV/",
+      imageUrl: "/modern-cv.png"
+    },
+    {
+      icon: BarChart3,
+      title: "Road Accident Dashboard",
+      description: "Data science dashboard analyzing road accident trends and severity hotspots using advanced visualization techniques.",
+      year: "2026",
+      category: "HTML, CSS, Data Science",
+      link: "https://road-accident-dashboard.vercel.app/",
+      imageUrl: "/road-accident-analysis.png"
+    },
+    {
+      icon: FileCheck,
+      title: "Conference Paper Submission Portal",
+      description: "Full-lifecycle conference paper management system built with Oracle APEX and Oracle 19c for secure peer review workflows.",
+      year: "2026",
+      category: "Oracle APIX, SQL, PL/SQL",
+      link: "https://oracleapex.com/ords/r/ajaygangwar945/conference-paper-submission-portal/login?session=116165243795646",
+      imageUrl: "/conference-portal.png"
+    },
+    {
+      icon: GraduationCap,
+      title: "Student Portal",
+      description: "Data-driven automation tool generating an interactive searchable student dashboard from Excel spreadsheets using Python.",
+      year: "2026",
+      category: "Python, JavaScript, HTML/CSS",
+      link: "https://student-portal-2023.vercel.app/",
+      imageUrl: "/student-portal.png"
+    },
+    {
+      icon: Globe,
+      title: "AG Portfolio",
+      description: "A high-performance personal portfolio showcasing technical skills and projects, built with React and Vite for optimal speed.",
+      year: "2026",
+      category: "React, Vite, CSS",
+      link: "https://ajaygangwar-portfolio.vercel.app/",
+      imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
+    },
     {
       icon: Star,
       title: "Eventfolio",
@@ -43,13 +115,22 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       imageUrl: "/portfolio-hub.png"
     },
     {
+      icon: Github,
+      title: "GitHub Profile Overview",
+      description: "A meticulously crafted GitHub profile README serving as a professional landing page, highlighting technical expertise, projects, and educational journey.",
+      year: "2025",
+      category: "Markdown, GitHub Actions, Portfolio",
+      link: "https://ajaygangwar945.github.io/ajaygangwar945/",
+      imageUrl: "/github-profile.png"
+    },
+    {
       icon: Star,
-      title: "Ayush Healthcare Platform",
+      title: "Ayush Intelligence",
       description: "Architected a React and FastAPI platform with 35% latency reduction and 95% accuracy in medical term mapping",
       year: "2025",
       category: "React, FastAPI, NLP",
       link: "https://icd-mapping.onrender.com/",
-      imageUrl: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80" // Medical/Healthcare placeholder
+      imageUrl: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80"
     },
     {
       icon: Medal,
@@ -58,16 +139,16 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       year: "2025",
       category: "AI, Streamlit, NLP",
       link: "https://ats-resume-score-945.streamlit.app/",
-      imageUrl: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80" // Document/Analysis placeholder
+      imageUrl: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80"
     },
     {
       icon: Shield,
-      title: "Cyber Warfare Intrusion Detection System",
+      title: "Cyber Warfare Intrusion Detection",
       description: "An interactive, real-time intrusion detection dashboard designed to detect malicious activities and cyber attacks using ML.",
       year: "2025",
       category: "Python, ML, React",
       link: "https://cyber-warfare-intrusion-detection.onrender.com/",
-      imageUrl: "/cyber-warfare.png" // Generated image
+      imageUrl: "/cyber-warfare.png"
     },
     {
       icon: Code,
@@ -76,7 +157,7 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       year: "2025",
       category: "React, Vite, Gemini AI",
       link: "https://ajay-gangwar-portfolio.netlify.app/",
-      imageUrl: "/ai-portfolio.png" // Generated image
+      imageUrl: "/ai-portfolio.png"
     },
     {
       icon: Medal,
@@ -84,7 +165,7 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       description: "Comprehensive Rainfall EDA & Machine Learning project built with Python (Pandas/Scikit-learn) and a premium Three.js web dashboard.",
       year: "2025",
       category: "Python, ML, Three.js",
-      link: "https://ajaygangwar945.github.io/Rainfall-Data-Analysis-Project/",
+      link: "https://ajaygangwar945.github.io/Indian-Rainfall-Data-Analysis/",
       imageUrl: "/rainfall-analysis.png"
     },
     {
@@ -98,7 +179,7 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
     },
     {
       icon: Star,
-      title: "Ayush FHIR Platform",
+      title: "Ayush FHIR",
       description: "Healthcare interoperability platform integrating traditional Ayush systems with HL7 FHIR standards for secure data exchange.",
       year: "2025",
       category: "React, Healthcare, FHIR",
@@ -112,7 +193,7 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       year: "2024",
       category: "React, OpenWeather API",
       link: "https://weather-forcasting-temperature.netlify.app/",
-      imageUrl: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80" // Weather placeholder
+      imageUrl: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80"
     },
     {
       icon: Shield,
@@ -125,16 +206,16 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
     },
     {
       icon: Award,
-      title: "Pet Adoption Platform",
+      title: "Pet Adoption & Animal Welfare",
       description: "Engineered a responsive web platform with 30% increased user engagement through dynamic galleries",
       year: "2023",
       category: "React, Tailwind CSS",
       link: "https://pet-adoption-animal-welfare.netlify.app/",
-      imageUrl: "https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&q=80" // Pet/Dog placeholder
+      imageUrl: "https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&q=80"
     },
     {
       icon: Code,
-      title: "Frontend Learning Hub",
+      title: "First HTML Project Overview",
       description: "Front-end learning hub featuring an interactive 3D dashboard, modular content, and responsive UI design built with Three.js.",
       year: "2020",
       category: "HTML, CSS, JS, Three.js",
@@ -164,11 +245,11 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
 
   return (
     <section className="section-padding">
-      <div className="container-prose">
+      <div className="container mx-auto px-4">
         {/* Projects Section */}
         <div id="projects" className="mb-24 scroll-mt-28">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               {isFullPage ? "All Projects" : "Featured Projects"}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -178,8 +259,8 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {(showAllProjects ? projects : projects.slice(0, 4)).map((project, index) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {(showAllProjects ? projects : projects.slice(0, 9)).map((project, index) => (
               <Card key={index} className="glass-card hover-lift group relative overflow-hidden flex flex-col h-full border-muted/20 animate-fade-in">
                 <div className="h-48 overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent z-10" />
@@ -214,10 +295,11 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors font-medium group/link"
+                        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors font-medium group/link ml-auto"
                         title="View Project"
                       >
-                        View Project <ExternalLink className="h-4 w-4 transition-transform group-hover/link:translate-x-1" />
+                        <span className="hidden sm:inline">View Project</span>
+                        <ExternalLink className="h-4 w-4 transition-transform group-hover/link:translate-x-1" />
                       </a>
                     )}
                   </div>
@@ -226,7 +308,7 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
             ))}
           </div>
 
-          {!isFullPage && projects.length > 4 && (
+          {!isFullPage && projects.length > 9 && (
             <div className="mt-12 text-center overflow-hidden">
               <Button
                 variant="outline"

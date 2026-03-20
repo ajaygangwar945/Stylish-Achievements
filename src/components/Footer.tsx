@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className="space-y-4">
                         <h3 className="text-xl font-bold gradient-text">Ajay Gangwar</h3>
                         <p className="text-muted-foreground text-sm max-w-xs">
-                            Computer Science student and Full Stack Developer passionate about building innovative solutions and AI-powered applications.
+                            Data Science student and Full Stack Developer passionate about building data-driven solutions and AI-powered applications.
                         </p>
                     </div>
 

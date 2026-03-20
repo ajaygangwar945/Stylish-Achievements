@@ -5,8 +5,8 @@ import { User, Target, Heart } from "lucide-react";
 const About = () => {
   const stats = [
     { icon: User, label: "Years of Study", value: "2.5+" },
-    { icon: Target, label: "Projects Completed", value: "4+" },
-    { icon: Heart, label: "Certifications", value: "5+" },
+    { icon: Target, label: "Projects Completed", value: "20+" },
+    { icon: Heart, label: "Certifications", value: "15+" },
   ];
 
   return (
@@ -23,14 +23,14 @@ const About = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">My Journey</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Currently pursuing B.Tech in Computer Science at Lovely Professional University, I'm passionate about
-              creating innovative solutions that bridge technology and real-world problems. My journey has been marked
-              by hands-on projects in healthcare technology, AI-powered applications, and full-stack web development.
+              Currently pursuing B.Tech in Data Science at Lovely Professional University, I'm passionate about
+              creating data-driven solutions that bridge technology and real-world problems. My journey has been marked
+              by hands-on projects in machine learning, AI-powered applications, and modern full-stack development.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              With expertise in React, Next.js, Python, and modern development frameworks, I've built platforms that
+              With expertise in Python, machine learning, React, and Next.js, I've built platforms that
               have won hackathons and solved practical challenges. I believe in continuous learning and applying
-              cutting-edge technologies to create meaningful impact.
+              data-driven insights to create meaningful impact.
             </p>
 
             <div className="flex flex-wrap gap-2">

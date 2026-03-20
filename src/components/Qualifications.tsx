@@ -1,17 +1,18 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, BookOpen, Award, ExternalLink } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const Qualifications = () => {
   const education = [
     {
       icon: GraduationCap,
       degree: "Bachelor of Technology",
-      field: "Computer Science and Engineering",
+      field: "Data Science and Engineering",
       institution: "Lovely Professional University",
       year: "2023 - Present",
       status: "In Progress",
-      grade: "CGPA: 7.38",
+      grade: "CGPA: 7.4",
       description: "Comprehensive study of software development, data structures, algorithms, AI/ML, and modern web technologies.",
     },
     {
@@ -31,7 +32,7 @@ const Qualifications = () => {
       institution: "Vidya Bhavan Public School, Bareilly",
       year: "2019 - 2020",
       status: "Completed",
-      grade: "90%",
+      grade: "94%",
       description: "Completed secondary education with excellent academic performance.",
     },
   ];
@@ -111,40 +112,42 @@ const Qualifications = () => {
   const QualificationCard = ({ qual }: { qual: any }) => (
     <Card className="glass-card hover-lift">
       <CardContent className="p-6">
-        <div className="flex flex-col lg:flex-row lg:items-center gap-6">
+        <div className="flex flex-col md:flex-row md:items-center gap-6">
           <div className="flex items-start gap-4">
             <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-primary text-white flex-shrink-0">
               <qual.icon className="h-6 w-6" />
             </div>
             <div className="flex-1 space-y-2">
               <div className="flex flex-wrap items-center gap-2">
-                <h3 className="text-xl font-semibold">{qual.degree}</h3>
-                <Badge className={getStatusColor(qual.status)}>
-                  {qual.status}
-                </Badge>
-                {qual.link && (
-                  <a
-                    href={qual.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                    aria-label={`View ${qual.degree} Certificate`}
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                  </a>
-                )}
+                <h3 className="text-xl font-semibold leading-tight">{qual.degree}</h3>
+                <div className="flex items-center gap-2 w-full sm:w-auto">
+                  <Badge className={cn("text-[10px] px-2 py-0", getStatusColor(qual.status))}>
+                    {qual.status}
+                  </Badge>
+                  {qual.link && (
+                    <a
+                      href={qual.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                      aria-label={`View ${qual.degree} Certificate`}
+                    >
+                      <ExternalLink className="h-4 w-4" />
+                    </a>
+                  )}
+                </div>
               </div>
               <p className="text-lg text-primary font-medium">{qual.field}</p>
-              <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
-                <span>🏫 {qual.institution}</span>
-                <span>📅 {qual.year}</span>
-                <span>🏆 {qual.grade}</span>
+              <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-muted-foreground">
+                <span className="flex items-center gap-1">🏫 {qual.institution}</span>
+                <span className="flex items-center gap-1">📅 {qual.year}</span>
+                <span className="flex items-center gap-1">🏆 {qual.grade}</span>
               </div>
             </div>
           </div>
 
-          <div className="lg:flex-1 lg:max-w-md">
-            <p className="text-muted-foreground text-sm leading-relaxed">
+          <div className="md:flex-1 md:max-w-md">
+            <p className="text-muted-foreground text-sm leading-relaxed border-t md:border-t-0 pt-4 md:pt-0">
               {qual.description}
             </p>
           </div>
