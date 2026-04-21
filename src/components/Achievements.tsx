@@ -16,13 +16,22 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
 
   const projects = [
     {
-      icon: Gavel,
-      title: "AI Legal Advisor",
-      description: "AI-powered legal assistance platform with document analysis and automated Q&A using Gemini AI.",
+      icon: Globe,
+      title: "AG Portfolio",
+      description: "A high-performance personal portfolio showcasing technical skills and projects, built with React and Vite for optimal speed.",
       year: "2026",
-      category: "React, TypeScript, Gemini AI",
-      link: "https://ai-legal-advisor-chatbot.vercel.app/",
-      imageUrl: "/legal-advisor.png"
+      category: "React, Vite, CSS",
+      link: "https://ajaygangwar-portfolio.vercel.app/",
+      imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
+    },
+    {
+      icon: FileText,
+      title: "CV Portfolio",
+      description: "Premium portfolio with glassmorphism, 3D effects, and integrated PDF previewer for a high-end user experience.",
+      year: "2026",
+      category: "JavaScript, HTML, CSS",
+      link: "https://ajaygangwar945.github.io/CV/",
+      imageUrl: "/modern-cv.png"
     },
     {
       icon: Activity,
@@ -33,6 +42,7 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       link: "https://medpath-pro.onrender.com/",
       imageUrl: "/medpath-pro.png"
     },
+
     {
       icon: Brain,
       title: "Intelligence Explorer",
@@ -42,14 +52,24 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       link: "https://intelligence-explorer.vercel.app/",
       imageUrl: "/intelligence-explorer.png"
     },
+
     {
-      icon: FileText,
-      title: "CV Portfolio",
-      description: "Premium portfolio with glassmorphism, 3D effects, and integrated PDF previewer for a high-end user experience.",
+      icon: Gavel,
+      title: "AI Legal Advisor",
+      description: "AI-powered legal assistance platform with document analysis and automated Q&A using Gemini AI.",
       year: "2026",
-      category: "JavaScript, HTML, CSS",
-      link: "https://ajaygangwar945.github.io/CV/",
-      imageUrl: "/modern-cv.png"
+      category: "React, TypeScript, Gemini AI",
+      link: "https://ai-legal-advisor-chatbot.vercel.app/",
+      imageUrl: "/legal-advisor.png"
+    },
+    {
+      icon: GraduationCap,
+      title: "Student Portal",
+      description: "Data-driven automation tool generating an interactive searchable student dashboard from Excel spreadsheets using Python.",
+      year: "2026",
+      category: "Python, JavaScript, HTML/CSS",
+      link: "https://student-portal-2023.vercel.app/",
+      imageUrl: "/student-portal.png"
     },
     {
       icon: BarChart3,
@@ -69,24 +89,8 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       link: "https://oracleapex.com/ords/r/ajaygangwar945/conference-paper-submission-portal/login?session=116165243795646",
       imageUrl: "/conference-portal.png"
     },
-    {
-      icon: GraduationCap,
-      title: "Student Portal",
-      description: "Data-driven automation tool generating an interactive searchable student dashboard from Excel spreadsheets using Python.",
-      year: "2026",
-      category: "Python, JavaScript, HTML/CSS",
-      link: "https://student-portal-2023.vercel.app/",
-      imageUrl: "/student-portal.png"
-    },
-    {
-      icon: Globe,
-      title: "AG Portfolio",
-      description: "A high-performance personal portfolio showcasing technical skills and projects, built with React and Vite for optimal speed.",
-      year: "2026",
-      category: "React, Vite, CSS",
-      link: "https://ajaygangwar-portfolio.vercel.app/",
-      imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
-    },
+
+
     {
       icon: Star,
       title: "Eventfolio",
@@ -115,31 +119,13 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       imageUrl: "/portfolio-hub.png"
     },
     {
-      icon: Github,
-      title: "GitHub Profile Overview",
-      description: "A meticulously crafted GitHub profile README serving as a professional landing page, highlighting technical expertise, projects, and educational journey.",
+      icon: Code,
+      title: "Portfolio",
+      description: "Personal portfolio built with React and Vite, featuring Gemini AI integration for an interactive chatbot and project idea generator.",
       year: "2025",
-      category: "Markdown, GitHub Actions, Portfolio",
-      link: "https://ajaygangwar945.github.io/ajaygangwar945/",
-      imageUrl: "/github-profile.png"
-    },
-    {
-      icon: Star,
-      title: "Ayush Intelligence",
-      description: "Architected a React and FastAPI platform with 35% latency reduction and 95% accuracy in medical term mapping",
-      year: "2025",
-      category: "React, FastAPI, NLP",
-      link: "https://icd-mapping.onrender.com/",
-      imageUrl: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80"
-    },
-    {
-      icon: Medal,
-      title: "ATS Resume Score",
-      description: "Engineered an AI-powered ATS analyzer that reduced resume screening time by 70% with 92% accuracy",
-      year: "2025",
-      category: "AI, Streamlit, NLP",
-      link: "https://ats-resume-score-945.streamlit.app/",
-      imageUrl: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80"
+      category: "React, Vite, Gemini AI",
+      link: "https://ajay-gangwar-portfolio.netlify.app/",
+      imageUrl: "/ai-portfolio.png"
     },
     {
       icon: Shield,
@@ -149,15 +135,6 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       category: "Python, ML, React",
       link: "https://cyber-warfare-intrusion-detection.onrender.com/",
       imageUrl: "/cyber-warfare.png"
-    },
-    {
-      icon: Code,
-      title: "Portfolio",
-      description: "Personal portfolio built with React and Vite, featuring Gemini AI integration for an interactive chatbot and project idea generator.",
-      year: "2025",
-      category: "React, Vite, Gemini AI",
-      link: "https://ajay-gangwar-portfolio.netlify.app/",
-      imageUrl: "/ai-portfolio.png"
     },
     {
       icon: Medal,
@@ -187,13 +164,31 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       imageUrl: "/ayush-fhir.png"
     },
     {
-      icon: Trophy,
-      title: "Weather App",
-      description: "A React-based weather application that provides real-time weather data using the OpenWeatherMap API, with city search and geolocation support.",
-      year: "2024",
-      category: "React, OpenWeather API",
-      link: "https://weather-forcasting-temperature.netlify.app/",
-      imageUrl: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80"
+      icon: Star,
+      title: "Ayush Intelligence",
+      description: "Architected a React and FastAPI platform with 35% latency reduction and 95% accuracy in medical term mapping",
+      year: "2025",
+      category: "React, FastAPI, NLP",
+      link: "https://icd-mapping.onrender.com/",
+      imageUrl: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80"
+    },
+    {
+      icon: Medal,
+      title: "ATS Resume Score",
+      description: "Engineered an AI-powered ATS analyzer that reduced resume screening time by 70% with 92% accuracy",
+      year: "2025",
+      category: "AI, Streamlit, NLP",
+      link: "https://ats-resume-score-945.streamlit.app/",
+      imageUrl: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80"
+    },
+    {
+      icon: Github,
+      title: "GitHub Profile Overview",
+      description: "A meticulously crafted GitHub profile README serving as a professional landing page, highlighting technical expertise, projects, and educational journey.",
+      year: "2025",
+      category: "Markdown, GitHub Actions, Portfolio",
+      link: "https://ajaygangwar945.github.io/ajaygangwar945/",
+      imageUrl: "/github-profile.png"
     },
     {
       icon: Shield,
@@ -203,6 +198,15 @@ const Achievements = ({ isFullPage = false }: AchievementsProps) => {
       category: "Node.js, Express, MongoDB",
       link: "https://softhub-bwnd.onrender.com/",
       imageUrl: "/softhub-backend.png"
+    },
+    {
+      icon: Trophy,
+      title: "Weather App",
+      description: "A React-based weather application that provides real-time weather data using the OpenWeatherMap API, with city search and geolocation support.",
+      year: "2024",
+      category: "React, OpenWeather API",
+      link: "https://weather-forcasting-temperature.netlify.app/",
+      imageUrl: "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80"
     },
     {
       icon: Award,
