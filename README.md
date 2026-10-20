@@ -138,6 +138,13 @@ npm install
 npm run dev
 ```
 
+Once started, the application will be available locally at:
+👉 **`http://localhost:8081/`**
+
+> [!NOTE]
+> The dev server is configured to run on port **`8081`** in `vite.config.ts` to avoid common local port conflicts with services bound to port 8080.
+
+
 ---
 
 ## 🌐 Deployment
